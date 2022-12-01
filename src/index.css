@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Karla", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,6 +10,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main {
+  padding: 36px;
 }
 
 .header {
@@ -34,4 +38,23 @@ code {
 .header-project {
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form-input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form-button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
 }
